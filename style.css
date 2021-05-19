@@ -19,6 +19,38 @@ body {
   background-color: #3a4764;
 }
 
+.wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.theme {
+  margin-right: 5%;
+  font-size: 12px;
+}
+
+.container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.number {
+  margin-top: -1em;
+  font-size: smaller;
+}
+
+.radio {
+  background-color: #232c43;
+  width: 100%;
+  height: 1em;
+  border-radius: 30%;
+}
+
 .calculator {
   width: 100%;
   height: 100%;
@@ -30,12 +62,12 @@ body {
 }
 
 .screen {
-  width: 60%;
-  height: 10%;
+  /*width: 60%;
+  height: 10%;*/
   margin: auto;
   margin-bottom: 2%;
   background-color: #182034;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .keyPad {
@@ -48,31 +80,90 @@ body {
   background-color: #232c43;
   margin: auto;
   margin-top: 0;
+  border-radius: 10px;
 }
 
-.keyPad > button {
-  margin: 5%;
-  border-radius: 10px;
-  font-size: 16px;
+@media screen and (min-width: 350px) {
+  .keyPad > button {
+    margin: 5%;
+    border-radius: 10px;
+    font-size: 19px;
+  }
+
+  .keyPad {
+    height: 65%;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  .screen {
+    width: 80%;
+    height: 15%;
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .keyPad {
+    width: 35%;
+    height: 50%;
+  }
+
+  .keyPad > button {
+    margin: 3%;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .screen {
+    height: 15%;
+    width: 35%;
+  }
+
+  .wrapper {
+    font-size: 22px;
+    width: 35%;
+  }
+
+  .container {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+  }
+}
+.dot,
+.minus,
+.plus,
+.divide,
+.multiply {
+  background-color: #eae3dc;
+  box-shadow: 0 -0.4em #b4a597 inset;
 }
 
 .reset {
   grid-area: n;
   background-color: #637097;
+  color: #eae3dc;
+  box-shadow: 0 -0.4em #404e72 inset;
 }
 
 .delete {
   background-color: #637097;
+  color: #eae3dc;
+  box-shadow: 0 -0.4em #404e72 inset;
 }
 
 .result {
   grid-area: o;
   background-color: #d03f2f;
+  box-shadow: 0 -0.4em #93261a inset;
+  color: white;
 }
 
 .key {
   background-color: #eae3dc;
-  box-shadow: inset 0.5rem #404e72;
+  box-shadow: 0 -0.4em #b4a597 inset;
 }
 
 .attribution {
