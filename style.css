@@ -64,10 +64,15 @@ body {
 .screen {
   /*width: 60%;
   height: 10%;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin: auto;
   margin-bottom: 2%;
   background-color: #182034;
   border-radius: 10px;
+  color: white;
+  font-size: 2em;
 }
 
 .keyPad {
@@ -133,12 +138,14 @@ body {
   }
 }
 .dot,
-.minus,
-.plus,
-.divide,
-.multiply {
+.operand {
   background-color: #eae3dc;
   box-shadow: 0 -0.4em #b4a597 inset;
+}
+
+.dot:active,
+.operand:active {
+  box-shadow: none;
 }
 
 .reset {
@@ -148,10 +155,18 @@ body {
   box-shadow: 0 -0.4em #404e72 inset;
 }
 
+.reset:active {
+  box-shadow: none;
+}
+
 .delete {
   background-color: #637097;
   color: #eae3dc;
   box-shadow: 0 -0.4em #404e72 inset;
+}
+
+.delete:active {
+  box-shadow: none;
 }
 
 .result {
@@ -161,9 +176,17 @@ body {
   color: white;
 }
 
+.result:active {
+  box-shadow: none;
+}
+
 .key {
   background-color: #eae3dc;
   box-shadow: 0 -0.4em #b4a597 inset;
+}
+
+.key:active {
+  box-shadow: none;
 }
 
 .attribution {

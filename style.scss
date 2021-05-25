@@ -58,10 +58,15 @@ body{
 .screen {
   /*width: 60%;
   height: 10%;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin: auto;
   margin-bottom: 2%;
   background-color: hsl(224, 36%, 15%);
   border-radius: 10px;
+  color: hsl(0, 0, 100%);
+  font-size: 2em;
 }
 .keyPad{
   width: 60%;
@@ -128,14 +133,13 @@ body{
   }
 }
 .dot,
-.minus,
-.plus,
-.divide,
-.multiply{
+.operand{
   background-color: hsl(30, 25%, 89%);
   box-shadow: 0 -0.4em   hsl(28, 16%, 65%) inset ;
-  
-
+}
+.dot:active,
+.operand:active {
+  box-shadow: none;
 }
 .reset   {
   grid-area: n;
@@ -144,12 +148,16 @@ body{
   box-shadow: 0 -0.4em   hsl(224, 28%, 35%) inset ;
  
 }
+.reset:active {
+  box-shadow: none;
+}
 .delete {
   background-color: hsl(225, 21%, 49%) ;
   color: hsl(30, 25%, 89%);
   box-shadow: 0 -0.4em   hsl(224, 28%, 35%) inset ;
-
-
+}
+.delete:active{
+  box-shadow: none;
 }
 .result {
   grid-area: o;
@@ -157,11 +165,15 @@ body{
   box-shadow: 0 -0.4em   hsl(6, 70%, 34%) inset ;
   color: hsl(0, 0, 100%);
 }
+.result:active {
+  box-shadow: none;
+}
 .key {
   background-color:  hsl(30, 25%, 89%) ;
   box-shadow: 0 -0.4em    hsl(28, 16%, 65%) inset ;
-  
-  
+}
+.key:active {
+  box-shadow: none;
 }
 
 
