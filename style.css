@@ -36,12 +36,11 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.number {
+.select {
   margin-top: -1em;
-  font-size: smaller;
 }
 
 .radio {
@@ -65,14 +64,27 @@ body {
   /*width: 60%;
   height: 10%;*/
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
   margin: auto;
   margin-bottom: 2%;
   background-color: #182034;
   border-radius: 10px;
   color: white;
-  font-size: 2em;
+}
+
+.current-operator {
+  font-size: 0.5em;
+}
+
+.current-operand {
+  font-size: 1.8em;
+}
+
+.previous-operand {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.609);
 }
 
 .keyPad {
@@ -145,7 +157,7 @@ body {
 
 .dot:active,
 .operand:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em #b4a597 inset;
 }
 
 .reset {
@@ -156,7 +168,7 @@ body {
 }
 
 .reset:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em #404e72 inset;
 }
 
 .delete {
@@ -166,7 +178,7 @@ body {
 }
 
 .delete:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em #404e72 inset;
 }
 
 .result {
@@ -177,16 +189,16 @@ body {
 }
 
 .result:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em #93261a inset;
 }
 
-.key {
+.number {
   background-color: #eae3dc;
   box-shadow: 0 -0.4em #b4a597 inset;
 }
 
-.key:active {
-  box-shadow: none;
+.number:active {
+  box-shadow: 0 -0.2em #b4a597 inset;
 }
 
 .attribution {

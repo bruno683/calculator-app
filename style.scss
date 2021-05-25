@@ -31,12 +31,12 @@ body{
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  font-size: 16px;
+  font-size: 18px;
 
 }
-.number {
+.select {
   margin-top: -1em;
-  font-size: smaller;
+  //font-size: smaller;
 }
 .radio {
   background-color: hsl(223, 31%, 20%) ;
@@ -59,14 +59,24 @@ body{
   /*width: 60%;
   height: 10%;*/
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
   margin: auto;
   margin-bottom: 2%;
   background-color: hsl(224, 36%, 15%);
   border-radius: 10px;
   color: hsl(0, 0, 100%);
-  font-size: 2em;
+}
+.current-operator{
+  font-size: 0.5em;
+}
+.current-operand {
+  font-size: 1.8em;
+}
+.previous-operand {
+  font-size: 1.5em;
+  color:rgba(255, 255, 255, 0.609);
 }
 .keyPad{
   width: 60%;
@@ -139,7 +149,7 @@ body{
 }
 .dot:active,
 .operand:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em    hsl(28, 16%, 65%) inset ;
 }
 .reset   {
   grid-area: n;
@@ -149,7 +159,7 @@ body{
  
 }
 .reset:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em    hsl(224, 28%, 35%) inset ;
 }
 .delete {
   background-color: hsl(225, 21%, 49%) ;
@@ -157,8 +167,10 @@ body{
   box-shadow: 0 -0.4em   hsl(224, 28%, 35%) inset ;
 }
 .delete:active{
-  box-shadow: none;
+  box-shadow: 0 -0.2em    hsl(224, 28%, 35%) inset ;
 }
+  
+
 .result {
   grid-area: o;
   background-color: hsl(6, 63%, 50%) ;
@@ -166,14 +178,16 @@ body{
   color: hsl(0, 0, 100%);
 }
 .result:active {
-  box-shadow: none;
+  box-shadow: 0 -0.2em    hsl(6, 70%, 34%) inset ;
+  
 }
-.key {
+.number {
   background-color:  hsl(30, 25%, 89%) ;
   box-shadow: 0 -0.4em    hsl(28, 16%, 65%) inset ;
 }
-.key:active {
-  box-shadow: none;
+.number:active {
+  box-shadow: 0 -0.2em    hsl(28, 16%, 65%) inset ;
+  
 }
 
 
