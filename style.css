@@ -64,8 +64,7 @@ body {
   /*width: 60%;
   height: 10%;*/
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   margin: auto;
   margin-bottom: 2%;
@@ -74,17 +73,8 @@ body {
   color: white;
 }
 
-.current-operator {
-  font-size: 0.5em;
-}
-
 .current-operand {
-  font-size: 1.8em;
-}
-
-.previous-operand {
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.609);
+  font-size: 4em;
 }
 
 .keyPad {
